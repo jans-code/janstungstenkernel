@@ -1,10 +1,16 @@
-##!/usr/bin/env python
+#!/usr/bin/env python
+# *_* coding: utf-8 *_*
+
+"""janstungstenkernel"""
+
+import os
+import shutil
+import pexpect
 from ipykernel.kernelbase import Kernel
-import pexpect, os, shutil
 
 class janstungstenkernel(Kernel):
     implementation = 'IPython'
-    implementation_version = '8.13.0'
+    implementation_version = '8.14.0'
     language = 'tungsten'
     language_version = '2.1'
     language_info = {
